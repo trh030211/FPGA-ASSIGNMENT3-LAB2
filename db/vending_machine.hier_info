@@ -1,0 +1,12 @@
+|vending_machine
+clk => state~1.DATAIN
+rst => state~3.DATAIN
+coin[0] => Equal0.IN0
+coin[0] => Equal1.IN1
+coin[1] => Equal0.IN1
+coin[1] => Equal1.IN0
+beverage << Selector4.DB_MAX_OUTPUT_PORT_TYPE
+change[0] << change.DB_MAX_OUTPUT_PORT_TYPE
+change[1] << change[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
